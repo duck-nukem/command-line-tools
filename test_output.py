@@ -23,11 +23,7 @@ if __name__ == '__main__':
         'What exploit type should we try? [any] ',
         message_type=MessageType.decision
     )
-    if str(python_version)[0] == '2':
-        # noinspection PyCompatibility
-        answer = raw_input(question)
-    else:
-        answer = input(question)
+    answer = Console.command_line_input(question)
 
     Console.task('Vulnerability library initialized')
     loader = Loader()

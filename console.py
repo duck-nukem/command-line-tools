@@ -138,3 +138,20 @@ class Console(object):
             message=message,
             terminator=MessageColor.end,
         )
+
+    @staticmethod
+    def command_line_input(question):
+        """
+        Allows you to ask for a user input, and takes care of deciding
+        which method to use based on the version of Python you are executing
+        the script with
+        :param question: Can be a Console message type, or a raw string
+        :return:
+        """
+        python_version = sys.platform.python_version()
+        if str(python_version)[0] == '2':
+            # noinspection PyCompatibility
+            answer = raw_input(question)
+        else:
+            answer = input(question)
+        return answer
