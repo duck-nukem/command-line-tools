@@ -1,6 +1,7 @@
 # coding=utf-8
 from __future__ import print_function
 
+import platform
 import sys
 
 
@@ -148,7 +149,7 @@ class Console(object):
         :param question: Can be a Console message type, or a raw string
         :return:
         """
-        python_version = sys.platform.python_version()
+        python_version = platform.python_version()
         if str(python_version)[0] == '2':
             # noinspection PyCompatibility
             answer = raw_input(question)
