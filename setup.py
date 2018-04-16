@@ -6,4 +6,5 @@ setup(
     description='Small library for CLIs',
     author='Alex Szabo',
     author_email='kreatemore@gmail.com',
+    python_requires='>=3.5',
 )
