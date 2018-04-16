@@ -1,8 +1,8 @@
 import platform
 import time
 
-from console import Console, MessageColor, MessageType
-from loader import Loader, LoadingFrameSets
+from command_line_tools.console import Console, MessageColor, MessageType
+from command_line_tools.loader import Loader, LoadingFrameSets
 
 if __name__ == '__main__':
     Console.write('\n\n1337 Pentagon Hacking Script v1.3.37\n\n')
