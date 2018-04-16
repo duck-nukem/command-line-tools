@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Distutils',
+    name='Command Line Tools',
     version='1.0',
     description='Small library for CLIs',
     author='Alex Szabo',
